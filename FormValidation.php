@@ -117,21 +117,21 @@ function Test_User_Input($Data)
         <fieldset>
         Name: <br>
         <input type="text" name="name" class="input" value="">
-        * <?php echo $NameError; ?><br>
+        <span class="Error">* <?php echo $NameError; ?></span><br>
 
         Email: <br>
         <input type="email" name="email" class="input" value="">
-        * <?php echo $EmailError; ?><br>
+        <span class="Error">* <?php echo $EmailError; ?></span><br>
 
 
         Gender: <br>
         <input type="radio" name="gender" class="radio" value="Female">Female
         <input type="radio" name="gender" class="radio" value="Male">Male
-        *<?php echo $GenderError; ?><br>
+        <span class="Error">*<?php echo $GenderError; ?></span><br>
 
         Website: <br>
         <input type="text" name="website" class="website" value="">
-        *<?php echo $WebsiteError; ?><br>
+        <span class="Error">*<?php echo $WebsiteError; ?></span><br>
 
         Comment: <br>
         <textarea  name="comment" rows="5" cols="25"></textarea>
